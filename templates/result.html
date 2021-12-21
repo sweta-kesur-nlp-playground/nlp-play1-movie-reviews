@@ -164,20 +164,35 @@
                                                 </svg>
                                             </div>
                                         </div>
-
+                                        {% if prediction == 1%}
                                         <div class="tw aos-init aos-animate" data-aos="animated">
                                           <h1 class="h1 section-title ">
                                             
-                                              <!-- <span class="o"><span class="i">Welcome</span></span>
+                                              <span class="o"><span class="i">This</span></span>
                                             
-                                              <span class="o"><span class="i">to</span></span>
+                                              <span class="o"><span class="i">seem to be a</span></span>
                                             
-                                              <span class="o"><span class="i"><strong><span>Sweta Kesur's NLP</span></strong></span></span>
+                                              <span class="o"><span class="i"><strong><span>Nice</span></strong></span></span>
                                             
-                                              <span class="o"><span class="i">playground</span></span> -->
+                                              <span class="o"><span class="i"></span>movie</span>
                                             
                                           </h1>
                                         </div>
+                                        {% elif prediction == 0%}
+                                        <div class="tw aos-init aos-animate" data-aos="animated">
+                                            <h1 class="h1 section-title ">
+                                              
+                                                <span class="o"><span class="i">This</span></span>
+                                              
+                                                <span class="o"><span class="i">seem to be a</span></span>
+                                              
+                                                <span class="o"><span class="i"><strong><span>Bad</span></strong></span></span>
+                                              
+                                                <span class="o"><span class="i">movie</span></span>
+                                              
+                                            </h1>
+                                          </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                                 {% if prediction == 1%}
@@ -216,9 +231,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    </br></br>
-                                    </br></br>
-                                    <div class="content-margin-micro">
+                                </br></br>
+                                </br></br>
+                                <div class="content-margin-micro">
+                                    <label style="font-size: 0.6rem;">COPYRIGHT © 2021, Sweta Kesur</label>
+                                </div>
+                                    <!-- <div class="content-margin-micro">
                                         <h2 class="h3">This seem to be a nice movie!</h2>
                                     </div>
 
@@ -227,7 +245,7 @@
                                     </div>
                                     <div class="content-margin-micro">
                                         <label style="font-size: 0.6rem;">COPYRIGHT © 2021, Sweta Kesur</label>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                                 {% elif prediction == 0%}
@@ -270,16 +288,17 @@
                                 </br></br>
                                 </br></br>
                                 <div class="content-margin-micro">
+                                    <label style="font-size: 0.6rem;">COPYRIGHT © 2021, Sweta Kesur</label>
+                                </div>
+                                <!-- <div class="content-margin-micro">
                                         <h2 class="h3">This doesn't seem to be a nice movie!</h2>
                                     </div>
 
                                     <div class="content-margin-micro">
                                         <a href="/" class="content-margin zoom button border primary">Return home</a>
                                     </div>
-                                    <div class="content-margin-micro">
-                                        <label style="font-size: 0.6rem;">COPYRIGHT © 2021, Sweta Kesur</label>
-                                    </div>
-                                </div>
+                                    
+                                </div> -->
 
                                 {% endif %}
 
@@ -343,6 +362,14 @@
                                                     </g>
                                                 </g>
                                             </svg>
+                                        </div>
+
+                                        <div class="content-margin-micro">
+                                            <h2 class="h3">Want to get more review predictions, then click this button. </h2>
+                                        </div>
+
+                                        <div>
+                                            <a href="/" class="content-margin zoom button border primary">Return home</a>
                                         </div>
                                     </div>
                                 </div>
